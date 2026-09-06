@@ -1,0 +1,67 @@
+/* Responsive styles for SocialPulse AI dashboard */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .section {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header, .footer {
+        font-size: 14px;
+    }
+
+    .section {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header, .footer {
+        font-size: 12px;
+    }
+
+    .section {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header, .footer {
+        font-size: 10px;
+    }
+
+    .section {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}

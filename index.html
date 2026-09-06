@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialPulse AI</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo">Social<span>Pulse</span> <b>AI</b></div>
+      <p class="muted">SOCIAL INTELLIGENCE</p>
+      <nav>
+        <a class="active" href="#overview">◈ Overview</a>
+        <a href="#sentiment-analysis">🧠 Sentiment</a>
+        <a href="#trend-tracking">🔥 Trends</a>
+        <a href="#network-analysis">🕸 Network</a>
+        <a href="#audience-demographics">👥 Audience</a>
+        <a href="#timeline-alerts">⏱ Alerts</a>
+      </nav>
+      <div class="sidebar-status">● LIVE MONITORING</div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">COMMAND CENTER / 2026</p>
+          <h1>Know the vibe.<br><span>Move different.</span></h1>
+          <p class="muted">AI-powered social intelligence for your digital ecosystem.</p>
+        </div>
+        <button class="refresh" onclick="location.reload()">↻ Refresh data</button>
+      </header>
+
+      <section id="overview" class="stats">
+        <article class="stat-card"><small>TOTAL MENTIONS</small><strong>128.4K</strong><em>↗ 18.6%</em></article>
+        <article class="stat-card"><small>ENGAGEMENT RATE</small><strong>7.82%</strong><em>↗ 4.2%</em></article>
+        <article class="stat-card"><small>POSITIVE VIBE</small><strong>64.8%</strong><em>↗ 9.1%</em></article>
+        <article class="stat-card"><small>INFLUENCER SCORE</small><strong>86/100</strong><em>↗ 12.4%</em></article>
+      </section>
+
+      <section id="sentiment-analysis" class="dashboard-section">
+        <div class="section-heading"><h2>🧠 Sentiment Analysis</h2><span>Updated just now</span></div>
+        <div class="content-grid">
+          <article class="panel chart-panel"><canvas id="sentimentChart"></canvas></article>
+          <article class="panel chart-panel"><canvas id="emotionChart"></canvas></article>
+        </div>
+      </section>
+
+      <section id="trend-tracking" class="dashboard-section">
+        <div class="section-heading"><h2>🔥 Trend Tracking</h2><span>Velocity monitor</span></div>
+        <div class="content-grid">
+          <article class="panel">
+            <h3>Trending topics</h3>
+            <div class="tags">
+              <span>#AI</span><span>#MachineLearning</span><span>#DataScience</span>
+              <span>#TechTrends</span><span>#Innovation</span>
+            </div>
+          </article>
+          <article class="panel chart-panel"><canvas id="trendChart"></canvas></article>
+        </div>
+      </section>
+
+      <section id="network-analysis" class="dashboard-section">
+        <div class="section-heading"><h2>🕸 Network Analysis</h2><span>Top communities</span></div>
+        <article class="panel network">
+          <div class="network-line line-one"></div>
+          <div class="network-line line-two"></div>
+          <div class="node center">SocialPulse</div>
+          <div class="node one">TechDaily</div>
+          <div class="node two">EcoVoice</div>
+          <div class="node three">DataMind</div>
+        </article>
+      </section>
+
+      <section id="audience-demographics" class="dashboard-section">
+        <div class="section-heading"><h2>👥 Audience Demographics</h2><span>128K profiles analyzed</span></div>
+        <div class="content-grid">
+          <article class="panel chart-panel"><canvas id="ageChart"></canvas></article>
+          <article class="panel chart-panel"><canvas id="languageChart"></canvas></article>
+        </div>
+      </section>
+
+      <section id="timeline-alerts" class="dashboard-section">
+        <div class="section-heading"><h2>⏱ Timeline & Alerts</h2><span>Priority events</span></div>
+        <article class="panel alerts">
+          <div>🔥 <b>New trend emerging:</b> #AI is gaining traction <time>2m ago</time></div>
+          <div>😊 <b>Sentiment shift:</b> Positive reactions increased <time>18m ago</time></div>
+          <div>⭐ <b>Influencer event:</b> TechDaily mentioned your topic <time>42m ago</time></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
